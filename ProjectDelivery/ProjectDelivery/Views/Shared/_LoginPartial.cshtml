@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AccModel> SignInManager
+@inject UserManager<AccModel> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        if (UserManager.GetUserAsync(User).Result == null)
+        {
+            <li class="nav-item">
+                <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                    <button type="submit" class="btn btn-link nav-link">Вийти</button>
+                </form>
+            </li>
+        }
+        else{
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-controller="Account" asp-action="ViewProfile">@UserManager.GetUserAsync(User).Result.Name</a>
+            </li>
+            <li class="nav-item">
+                <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                    <button type="submit" class="btn btn-link nav-link">Вийти</button>
+                </form>
+            </li>
+        }
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">Вхід</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register">Реєстрація</a>
+        </li>
+    }
+</ul>

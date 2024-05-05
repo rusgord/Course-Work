@@ -1,0 +1,232 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AccModel> SignInManager
+@inject UserManager<AccModel> UserManager
+@model ProjectDelivery.Models.AdminPanelViewModel
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('.editus-btn').click(function () {
+                var row = $(this).closest('tr');
+                row.find('.editableus').each(function () {
+                    var value = $(this).text();
+                    $(this).html('<input type="text" class="form-control" value="' + value + '">');
+                });
+                row.find('.editus-btn').hide();
+                row.find('.user-btn').show();
+            });
+
+            $('.deleteus-btn').click(function () {
+                var row = $(this).closest('tr');
+                var userId = row.data('userid');
+
+                if (confirm('Are you sure you want to delete this user?')) {
+                    $.post('@Url.Action("DeleteUser", "Admin")', { userId: userId })
+                        .done(function () {
+                            row.remove();
+                        })
+                        .fail(function (response) {
+                            alert('Failed to delete user. Error: ' + response.statusText);
+                        });
+                }
+            });
+
+            $('.saveus-btn').click(function () {
+                var row = $(this).closest('tr');
+                var userId = row.data('userid');
+
+                var data = {
+                    userId: userId,
+                    Name: row.find('[data-field="Name"] input').val(),
+                    Email: row.find('[data-field="Email"] input').val(),
+                    Phone: row.find('[data-field="PhoneNumber"] input').val(),
+                    Role: row.find('[data-field="Role"] input').val()
+                };
+
+                $.post('@Url.Action("UpdateUser", "Admin")', data, function () {
+                    location.reload();
+                });
+            });
+
+
+            $('.cancelus-btn').click(function () {
+                var row = $(this).closest('tr');
+                row.find('.editableus').each(function () {
+                    var value = $(this).find('input').val();
+                    $(this).text(value);
+                });
+                row.find('.editus-btn').show();
+                row.find('.user-btn').hide();
+            });
+
+            $('.editart-btn').click(function () {
+                var row = $(this).closest('tr');
+                row.find('.editableart[data-field="Description"]').each(function () {
+                    var value = $(this).text();
+                    $(this).html('<textarea class="form-control" rows="4">' + value + '</textarea>');
+                });
+                row.find('.editableart[data-field="Title"]').each(function () {
+                    var value = $(this).text();
+                    $(this).html('<input type="text" class="form-control" style="width: 150px;" value="' + value + '">');
+                });
+                row.find('.editart-btn').hide();
+                row.find('.art-btn').show();
+            });
+
+            $('.deleteart-btn').click(function () {
+                var row = $(this).closest('tr');
+                var articleId = row.data('articleid');
+
+                if (confirm('Are you sure you want to delete this article?')) {
+                    $.post('@Url.Action("DeleteArticle", "Admin")', { articleId: articleId })
+                        .done(function () {
+                            row.remove();
+                        })
+                        .fail(function (response) {
+                            alert('Failed to delete article. Error: ' + response.statusText);
+                        });
+                }
+            });
+
+
+            $('.saveart-btn').click(function () {
+                var row = $(this).closest('tr');
+                var articleId = row.data('articleid');
+
+                var data = {
+                    articleId: articleId,
+                    Title: row.find('[data-field="Title"] input').val(),
+                    Description: row.find('[data-field="Description"] textarea').val()
+                };
+
+                $.post('@Url.Action("UpdateArticle", "Admin")', data, function () {
+                    location.reload();
+                });
+            });
+
+
+            $('.cancelart-btn').click(function () {
+                var row = $(this).closest('tr');
+                row.find('.editableart[data-field="Description"]').each(function () {
+                    var value = $(this).find('textarea').val();
+                    $(this).text(value);
+                });
+                row.find('.editableart[data-field="Title"]').each(function () {
+                    var value = $(this).find('input').val();
+                    $(this).text(value);
+                });
+                row.find('.editart-btn').show();
+                row.find('.art-btn').hide();
+            });
+
+            $('#myTab a').on('click', function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+    </script>
+}
+@{
+    var curruser = await UserManager.GetUserAsync(User);
+    if (curruser.Roles == ProjectDelivery.Enums.EnumRoles.Admin)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 offset-md-2">
+                    <div class="nav-links">
+                        <div class="mb-2">
+                            <a class="btn btn-primary" asp-controller="Account" asp-action="ViewProfile">Профіль</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="btn btn-primary" asp-controller="Account" asp-action="ChangePassword">Змінити пароль</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="btn btn-primary" asp-controller="Account" asp-action="HistoryPackages">Посилки</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="btn btn-primary" asp-controller="Admin" asp-action="AdminPanel">Адмін панель</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Панель адміністратора</h2>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="true">Користувачі</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="articles-tab" data-toggle="tab" href="#articles" role="tab" aria-controls="articles" aria-selected="false">Статті</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="users" role="tabpanel" aria-labelledby="users-tab">
+                            <h3>Управління користувачами</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Ім'я</th>
+                                        <th>Email</th>
+                                        <th>Телефон</th>
+                                        <th>Роль</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var user in Model.accModels)
+                                    {
+                                        <tr data-userid="@user.Id">
+                                            <td><span class="editableus" data-field="Name">@user.Name</span></td>
+                                            <td><span class="editableus" data-field="Email">@user.Email</span></td>
+                                            <td><span class="editableus" data-field="PhoneNumber">@user.PhoneNumber</span></td>
+                                            <td><span class="editableus" data-field="Role">@user.Roles</span></td>
+                                            <td>
+                                                <button type="button" class="btn btn-info editus-btn">Редагувати</button>
+                                                <div class="btn-group-vertical user-btn" style="display: none;">
+                                                    <button type="button" class="btn btn-primary saveus-btn mb-2">Зберегти</button>
+                                                    <button type="button" class="btn btn-secondary cancelus-btn mb-2">Скасувати</button>
+                                                    <button type="button" class="btn btn-danger deleteus-btn mb-2">Видалити</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a asp-controller="Admin" asp-action="AddUser">Додати нового користувача</a>
+                        </div>
+                        <div class="tab-pane fade" id="articles" role="tabpanel" aria-labelledby="articles-tab">
+                            <h3>Управління статтями</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Айді</th>
+                                        <th>Заголовок</th>
+                                        <th>Текст статті</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var article in Model.articleModels)
+                                    {
+                                        <tr data-articleid="@article.Id">
+                                            <td>@article.Id</td>
+                                            <td><span class="editableart" data-field="Title">@article.Title</span></td>
+                                            <td><span class="editableart" data-field="Description">@article.Description</span></td>
+                                            <td>
+                                                <button type="button" class="btn btn-info editart-btn">Редагувати</button>
+                                                <div class="btn-group-vertical art-btn" style="display: none;">
+                                                    <button type="button" class="btn btn-primary saveart-btn mb-2">Зберегти</button>
+                                                    <button type="button" class="btn btn-secondary cancelart-btn mb-2">Скасувати</button>
+                                                    <button type="button" class="btn btn-danger deleteart-btn mb-2">Видалити</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a asp-controller="Admin" asp-action="AddArticle">Додати нову статтю</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

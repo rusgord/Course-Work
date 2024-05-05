@@ -1,0 +1,102 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AccModel> SignInManager
+@inject UserManager<AccModel> UserManager
+@{
+    ViewData["Title"] = "Історія посилок";
+}
+@model List<ProjectDelivery.Models.Package>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 offset-md-2">
+            <div class="nav-links">
+                <div class="mb-2">
+                    <a class="btn btn-primary" asp-controller="Account" asp-action="ViewProfile">Профіль</a>
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-primary" asp-controller="Account" asp-action="ChangePassword">Змінити пароль</a>
+                </div>
+                <div class="mb-2">
+                    <a class="btn btn-primary" asp-controller="Account" asp-action="HistoryPackages">Посилки</a>
+                </div>
+                @{
+                    var user = await UserManager.GetUserAsync(User);
+                    if (user.Roles == ProjectDelivery.Enums.EnumRoles.Admin)
+                    {
+                        <div class="mb-2">
+                            <a class="btn btn-primary" asp-controller="Admin" asp-action="AdminPanel">Адмін панель</a>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="package">
+                <h2>Відправлені посилки</h2>
+                <table class="table">
+                    <tread>
+                        <tr>
+                            <th>Отримувач</th>
+                            <th>Опис посилки</th>
+                            <th>Адреса доставки</th>
+                        </tr>
+                    </tread>
+                    <tbody>
+                        @{
+                            int i = 0;
+                            foreach (var package in Model)
+                            {
+                                if (UserManager.GetUserId(User) == package.SenderId)
+                                {
+                                    i++;
+                                    <tr>
+                                        <th>@package.recipientName</th>
+                                        <th>@package.Description</th>
+                                        <th>@package.City</th>
+                                    </tr>
+                                }
+                            }
+                            if (i == 0)
+                            {
+                                <tr>Не знайдено</tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div id="package">
+                <h2>Отримані посилки</h2>
+                <table class="table">
+                    <tread>
+                        <tr>
+                            <th>Відправник</th>
+                            <th>Опис посилки</th>
+                            <th>Адреса доставки</th>
+                        </tr>
+                    </tread>
+                    <tbody>
+                        @{
+                            i = 0;
+                            foreach (var package in Model)
+                            {
+                                if (UserManager.GetUserId(User) == package.RecipientId)
+                                {
+                                    i++;
+                                    <tr>
+                                        <th>@package.senderName</th>
+                                        <th>@package.Description</th>
+                                        <th>@package.City</th>
+                                    </tr>
+                                }
+                            }
+                            if (i == 0)
+                            {
+                                <tr>Не знайдено</tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

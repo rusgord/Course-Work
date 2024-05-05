@@ -1,0 +1,56 @@
+﻿@using ProjectDelivery.Enums
+@{
+    ViewData["Title"] = "Відправити";
+}
+@model ProjectDelivery.Models.Package
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Опис посилки</label>
+                    <input asp-for="Description" class="form-control" />
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="TypePayment" /> Швидка доставка
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Weight" class="control-label">Вага</label>
+                    <input asp-for="Weight" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label">Ціна</label>
+                    <input asp-for="Price" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="recipientName">ПІБ отримувача</label>
+                    <input asp-for="recipientName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone">Телефон</label>
+                    <input asp-for="Phone" class="form-control phone-input" maxlength="14" />
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="City">Місто</label>
+                    <select asp-for="City" class="form-control">
+                        <option disabled selected>Виберіть місто</option>
+                        @foreach (EnumCities city in Enum.GetValues(typeof(EnumCities)))
+                        {
+                            <option value="@city">@city</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Створити посилку" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-controller="Home" asp-action="Index">Повернутися на головну</a>
+    </div>
+</div>
