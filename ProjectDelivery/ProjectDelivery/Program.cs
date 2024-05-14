@@ -27,7 +27,6 @@ builder.Services.AddIdentity<AccModel, IdentityRole>(
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ControlsAccount>();
 
 var app = builder.Build();
 

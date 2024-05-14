@@ -5,27 +5,27 @@ namespace ProjectDelivery.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Name")]
+        [Display(Name = "Ім'я користувача")]
         public string Name { get; set; }
 
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "Пошта")]
         public string Email { get; set; }
 
         [Required]
         [Phone]
-        [Display(Name = "Phone")]
+        [Display(Name = "Мобільний телефон")]
         public string PhoneNumber { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Підтвердіть пароль")]
+        [Compare("Password", ErrorMessage = "Паролі не збігаються.")]
         public string ConfirmPassword { get; set; }
     }
 }

@@ -1,161 +1,68 @@
-﻿@{
+﻿<link rel="stylesheet" href="/css/tracking-service.css">
+@{
     ViewData["Title"] = "Трекінг";
 }
 @model ProjectDelivery.Models.TrackingModel
-<style>
-    #box {
-        background-color: white;
-        margin-right: 25px;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        padding-left: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    #tracking-form {
-        font-weight: bold;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-        #tracking-form input {
-            font-size: 18px;
-            border-radius: 12px;
-            padding: 10px 15px;
-            border: none;
-            outline: none;
-            background-color: #F1F1F1;
-        }
-
-        #tracking-form button {
-            font-size: 18px;
-            position: absolute;
-            right: 0;
-            top: -7px;
-            border-radius: 12px;
-            padding: 10px 15px;
-            background-color: #829DFF;
-            color: white;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-
-    h2 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    p {
-        font-weight: lighter;
-        font-size: 16px;
-        color: #757575;
-    }
-
-    #alert {
-        margin-top: 25px;
-        width: 100%;
-    }
-
-    .information{
-        margin-left: 25px;
-    }
-
-    #package {
-        margin-top: 25px;
-        background-color: white;        
-        padding-bottom: 10px;
-        padding-top: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-        #package table {
-            width: 100%;
-            border-collapse: collapse;
-            border-radius: 10px;
-        }
-
-        #package th, #package td {
-            padding: 10px 15px;
-        }
-
-        #package thead th {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        #package tbody th,
-        #package tbody td {
-            border: none;
-            font-weight: lighter;
-            text-align: center;
-        }
-</style>
 <div class="container">
-    <h1 class="offset-md-2" style="margin-top: 20px; font-size: 26px; font-weight: bold; color: #1B1E68;">Трекінг посилки</h1>
+    <h1 class="offset-md-2">Трекінг посилки</h1>    
     <div class="row">
-        <div class="col-md-4 offset-md-2" id="box">
-            <form method="post">
-                <h2>Відстеження посилки</h2>
-                <p class="text-box">Введіть номер посилки, щоб дізнатись статус:</p>
-                <div id="tracking-form">
-                    @{
-                        if (@Model.Id == 0)
-                        {
-                            <input type="text" class="form-control" placeholder="Введіть номер посилки" value="" asp-for="Id">
+        <div class="blocks">
+            <div class="box">
+                <form method="post">
+                    <h2>Відстеження посилки</h2>
+                    <p class="text-box">Введіть номер посилки, щоб дізнатись статус:</p>
+                    <div id="tracking-form">
+                        @{
+                            if (@Model.Id == 0)
+                            {
+                                <input type="text" class="form-control" placeholder="Введіть номер посилки" value="" asp-for="Id">
+                            }
+                            else
+                            {
+                                <input type="text" class="form-control" placeholder="Введіть номер посилки" value=@Model.Id asp-for="Id">
+                            }
                         }
-                        else
-                        {
-                            <input type="text" class="form-control" placeholder="Введіть номер посилки" value=@Model.Id asp-for="Id">
-                        }
-                    }
-                    <button type="submit" class="btn btn-primary mt-2">Відстежити</button>
+                        <button type="submit" class="btn btn-primary mt-2">Відстежити</button>
+                    </div>
+                </form>
+            </div>
+            <div class="box">
+                <div id="instructions">
+                    <h2>Як скористатися?</h2>
+                    <p class="text-box">На цій сторінці можна відстежувати відправлення по Україні. Для цього введіть у поле трек-номер, та натисніть кнопку «Відстежити».</p>
                 </div>
-            </form>
-        </div>
-        <div class="col-md-4" id="box">
-            <div id="instructions">
-                <h2>Як скористатися?</h2>
-                <p class="text-box">На цій сторінці можна відстежувати відправлення по Україні. Для цього введіть у поле трек-номер, та натисніть кнопку «Відстежити».</p>
             </div>
         </div>
     </div>
     <div class="information">
-        <div class="col-md-8 offset-md-2">
-            @{
-                if (!String.IsNullOrEmpty(@Model.Text))
-                {
-                    <div class="alert alert-danger" id="alert" role="alert">
-                        @Model.Text
-                    </div>
-                }
-                if (Model.IsFind)
-                {
-                    <div id="package">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Отримувач</th>
-                                    <th>Опис посилки</th>
-                                    <th>Адреса доставки</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>@Model.Name</th>
-                                    <th>@Model.Description</th>
-                                    <th>@Model.City</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                }
+        @{
+            if (!String.IsNullOrEmpty(@Model.Text))
+            {
+                <div class="alert alert-danger" id="alert" role="alert">
+                    @Model.Text
+                </div>
             }
-        </div>
+            if (Model.IsFind)
+            {
+                <div id="package">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Отримувач</th>
+                                <th>Опис посилки</th>
+                                <th>Адреса доставки</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>@Model.Name</th>
+                                <th>@Model.Description</th>
+                                <th>@Model.City</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            }
+        }
     </div>
 </div>

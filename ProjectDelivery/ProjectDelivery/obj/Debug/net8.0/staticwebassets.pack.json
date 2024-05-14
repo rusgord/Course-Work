@@ -5,8 +5,64 @@
       "PackagePath": "staticwebassets\\ProjectDelivery.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\addarticle-admin.css",
+      "PackagePath": "staticwebassets\\css\\addarticle-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\adduser-admin.css",
+      "PackagePath": "staticwebassets\\css\\adduser-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\adminpanel-admin.css",
+      "PackagePath": "staticwebassets\\css\\adminpanel-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\calculate-service.css",
+      "PackagePath": "staticwebassets\\css\\calculate-service.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\changepassword-account.css",
+      "PackagePath": "staticwebassets\\css\\changepassword-account.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\create-service.css",
+      "PackagePath": "staticwebassets\\css\\create-service.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\help-service.css",
+      "PackagePath": "staticwebassets\\css\\help-service.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\historypackages-account.css",
+      "PackagePath": "staticwebassets\\css\\historypackages-account.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\index-home.css",
+      "PackagePath": "staticwebassets\\css\\index-home.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\index-service.css",
+      "PackagePath": "staticwebassets\\css\\index-service.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\login-account.css",
+      "PackagePath": "staticwebassets\\css\\login-account.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\register-account.css",
+      "PackagePath": "staticwebassets\\css\\register-account.css"
+    },
+    {
       "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\tracking-service.css",
+      "PackagePath": "staticwebassets\\css\\tracking-service.css"
+    },
+    {
+      "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\css\\viewprofile-account.css",
+      "PackagePath": "staticwebassets\\css\\viewprofile-account.css"
     },
     {
       "Id": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\wwwroot\\favicon.ico",

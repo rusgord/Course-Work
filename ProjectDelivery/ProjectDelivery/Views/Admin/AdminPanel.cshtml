@@ -2,6 +2,7 @@
 @inject SignInManager<AccModel> SignInManager
 @inject UserManager<AccModel> UserManager
 @model ProjectDelivery.Models.AdminPanelViewModel
+<link rel="stylesheet" href="/css/adminpanel-admin.css">
 @section scripts {
     <script>
         $(document).ready(function () {
@@ -130,24 +131,31 @@
     if (curruser.Roles == ProjectDelivery.Enums.EnumRoles.Admin)
     {
         <div class="container">
-            <div class="row">
-                <div class="col-md-2 offset-md-2">
+                <div class="box">
+                    <h2>Меню</h2>
                     <div class="nav-links">
                         <div class="mb-2">
                             <a class="btn btn-primary" asp-controller="Account" asp-action="ViewProfile">Профіль</a>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-2 navig">
                             <a class="btn btn-primary" asp-controller="Account" asp-action="ChangePassword">Змінити пароль</a>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-2 navig">
                             <a class="btn btn-primary" asp-controller="Account" asp-action="HistoryPackages">Посилки</a>
                         </div>
-                        <div class="mb-2">
-                            <a class="btn btn-primary" asp-controller="Admin" asp-action="AdminPanel">Адмін панель</a>
-                        </div>
+                        @{
+                            var user = await UserManager.GetUserAsync(User);
+                            if (user.Roles == ProjectDelivery.Enums.EnumRoles.Admin)
+                            {
+                                <div class="mb-2 navig">
+                                    <a class="btn btn-primary" asp-controller="Admin" asp-action="AdminPanel">Адмін панель</a>
+                                </div>
+                            }
+                        }
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col">
+                <div class="box">
                     <h2>Панель адміністратора</h2>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -171,16 +179,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (var user in Model.accModels)
+                                    @foreach (var users in Model.accModels)
                                     {
-                                        <tr data-userid="@user.Id">
-                                            <td><span class="editableus" data-field="Name">@user.Name</span></td>
-                                            <td><span class="editableus" data-field="Email">@user.Email</span></td>
-                                            <td><span class="editableus" data-field="PhoneNumber">@user.PhoneNumber</span></td>
-                                            <td><span class="editableus" data-field="Role">@user.Roles</span></td>
+                                        <tr data-userid="@users.Id">
+                                            <td><span class="editableus" data-field="Name">@users.Name</span></td>
+                                            <td><span class="editableus" data-field="Email">@users.Email</span></td>
+                                            <td><span class="editableus" data-field="PhoneNumber">@users.PhoneNumber</span></td>
+                                            <td><span class="editableus" data-field="Role">@users.Roles</span></td>
                                             <td>
-                                                <button type="button" class="btn btn-info editus-btn">Редагувати</button>
-                                                <div class="btn-group-vertical user-btn" style="display: none;">
+                                                <button type="button" class="btn btn-primary editus-btn">Редагувати</button>
+                                                <div class="vertical user-btn" style="display: none;">
                                                     <button type="button" class="btn btn-primary saveus-btn mb-2">Зберегти</button>
                                                     <button type="button" class="btn btn-secondary cancelus-btn mb-2">Скасувати</button>
                                                     <button type="button" class="btn btn-danger deleteus-btn mb-2">Видалити</button>
@@ -211,8 +219,8 @@
                                             <td><span class="editableart" data-field="Title">@article.Title</span></td>
                                             <td><span class="editableart" data-field="Description">@article.Description</span></td>
                                             <td>
-                                                <button type="button" class="btn btn-info editart-btn">Редагувати</button>
-                                                <div class="btn-group-vertical art-btn" style="display: none;">
+                                                <button type="button" class="btn btn-primary editart-btn">Редагувати</button>
+                                                <div class="vertical art-btn" style="display: none;">
                                                     <button type="button" class="btn btn-primary saveart-btn mb-2">Зберегти</button>
                                                     <button type="button" class="btn btn-secondary cancelart-btn mb-2">Скасувати</button>
                                                     <button type="button" class="btn btn-danger deleteart-btn mb-2">Видалити</button>

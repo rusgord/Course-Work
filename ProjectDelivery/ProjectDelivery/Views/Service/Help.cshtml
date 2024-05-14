@@ -1,44 +1,29 @@
-﻿@using System.Web
+﻿<link rel="stylesheet" href="/css/help-service.css">
+@using System.Web
 @{
     ViewData["Title"] = "Допомога";
 }
 @model List<ArticleModel>
-<style>
-    .article-block {
-        background-color: #f2f2f2;  
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-    }
-
-        .article-block h3 {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .article-block p {
-            font-size: 18px;
-        }
-</style>
 <div class="container">
-    <h2>Розділ допомоги</h2>
-    <div class="article-blocks">
-        @{
-            if (Model.Count != 0)
-        {
-        foreach (var article in Model.OrderByDescending(a => a.Id))
-        {
-            <div class="article-block">
-                <h3>@Html.Raw(HttpUtility.HtmlDecode(article.Title))</h3>
-                <p>@Html.Raw(HttpUtility.HtmlDecode(article.Description))</p>
-            </div>
-        }
-        }
-        else{
+    <div class="back">
+        <h2>Розділ допомоги</h2>
+        <div class="article-blocks">
+            @{
+                if (Model.Count != 0)
+            {
+            foreach (var article in Model.OrderByDescending(a => a.Id))
+            {
                 <div class="article-block">
-                    <h3>Немає статей</h3>
+                    <h3>@Html.Raw(HttpUtility.HtmlDecode(article.Title))</h3>
+                    <p>@Html.Raw(HttpUtility.HtmlDecode(article.Description))</p>
                 </div>
-        }}
+            }
+            }
+            else{
+                    <div class="article-block">
+                        <h3>Немає статей</h3>
+                    </div>
+            }}
+        </div>
     </div>
 </div>

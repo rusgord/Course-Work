@@ -1,0 +1,101 @@
+.blocks {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 33%;
+    margin: 0 10px;
+    background-color: white;
+    padding: 20px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tracking-form {
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    #tracking-form input {
+        font-size: 18px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        background-color: #F1F1F1;
+    }
+
+    #tracking-form button {
+        font-size: 18px;
+        position: absolute;
+        right: 0;
+        top: -7px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        background-color: #829DFF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    #tracking-form button:hover {
+        background-color: #0056b3;
+    }
+
+h1 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1B1E68;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: #757575;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#alert {
+    width: 67.5%;
+}
+#package {
+    width: 67.5%;
+    background-color: white;
+    padding: 20px 40px 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+    #package table {
+        border-collapse: collapse;
+        border-radius: 10px;
+    }
+
+    #package th, #package td {
+        padding: 10px 15px;
+    }
+
+    #package thead th {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #package tbody th,
+    #package tbody td {
+        border: none;
+        font-weight: lighter;
+        text-align: center;
+    }

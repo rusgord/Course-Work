@@ -15,10 +15,16 @@ namespace ProjectDelivery.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<AccModel> _userManager;
+        public delegate Task PackageEventHandler(int packageId, string message);
+        public event PackageEventHandler PackageEventOccurred;
         public ServiceController(ApplicationDbContext context, UserManager<AccModel> userManager)
         {
             _context = context;
             _userManager = userManager;
+            PackageEventOccurred += async (packageId, message) =>
+            {
+                TempData["UserNotification"] = message;
+            };
         }
         public async Task<IActionResult> Index()
         {
@@ -96,6 +102,8 @@ namespace ProjectDelivery.Controllers
         {
             if (ModelState.IsValid)
             {
+                string PhoneNumber = Digits.ExtractDigits(package.Phone);
+                package.Phone = PhoneNumber;
                 var recipient = await new FindingUser().FindByPhoneNumberAsync(_userManager, package.Phone);
                 string currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (recipient != null && currentUserId != recipient.Id)
@@ -110,6 +118,7 @@ namespace ProjectDelivery.Controllers
                     package.senderName = user?.Name;
                     _context.Packages.Add(package);
                     await _context.SaveChangesAsync();
+                    await PackageEventOccurred?.Invoke(package.Id, "Посилка була успішно створена!");
                     return RedirectToAction("Index", "Home");
                 }
             }

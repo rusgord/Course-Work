@@ -1,0 +1,42 @@
+.back {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.article-blocks {
+    margin-top: 20px;
+}
+
+.article-block {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-block:last-child {
+    border-bottom: none;
+}
+
+.article-block h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #535353;
+}
+
+.article-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #535353;
+}
+
+.back h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1B1E68;
+}

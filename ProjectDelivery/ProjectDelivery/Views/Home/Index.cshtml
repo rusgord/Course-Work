@@ -1,184 +1,35 @@
-﻿@{
+﻿<link rel="stylesheet" href="/css/index-home.css">
+@{
     ViewData["Title"] = "Головна";
 }
 @model ProjectDelivery.Models.TrackingModel
-<style>
-    #background {
-        background-color: #ffb0eb;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #fon {
-        max-width: 80%;
-        display: block;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #search-container {
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .container {
-        z-index: 1;
-        overflow: hidden;
-    }
-
-    h1{
-        font-weight: bold;
-        font-size: 100px;
-        color: white;
-        text-shadow: 0px 0px 4px #CBCBCB;
-    }
-
-    #tracking-form {
-        font-weight: bold;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-        #tracking-form input {
-            font-size: 25px;
-            border-radius: 12px;
-            padding: 10px 15px;
-            border: none;
-            outline: none;
-            background-color: white;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        #tracking-form button {
-            font-size: 25px;
-            position: absolute;
-            right: 0;
-            border-radius: 12px;
-            padding: 10px 15px;
-            background-color: #829DFF;
-            color: white;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-
-    #tracking{
-        width: 1700px;
-    }
-    
-
-    #mainbtns {
-        border: none;
-        background-color: white;      
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-        
-    }
-
-        #mainbtns a{
-            color: #939393;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-    .image-button {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        vertical-align: middle;
-    }
-        .image-button img {
-            width: 250px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-    .image-button .button-text {
-        position: absolute;
-        top: 45%;
-        left: 37%;
-        transform: translate(-50%, -50%);
-        text-align: left;
-        font-size: 24px;
-        font-weight: bold;
-        opacity: 1;
-        transition: opacity 0.3s ease;
-    }
-
-
-    .image-button .button-text-detail {
-        position: absolute;
-        top: 75%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        text-align: left;
-        font-size: 16px;
-        font-weight: bold;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .image-button #express-text {
-        color: #B91FEF;
-    }
-
-    .image-button #other-text {
-        color: #1FB1EF;
-        top: 30%;
-        left: 30%
-    }
-
-    .image-button #detail-express {
-        color: #ED1BFF;
-    }
-
-    .image-button #detail-other {
-        top: 50%;
-        color: #1B69FF;
-    }
-        
-    .image-button:hover #detail-express {            
-        opacity: 1;
-    }
-
-    .image-button:hover #detail-other {            
-        opacity: 1;
-    }
-
-    .ml-20 {
-        margin-left: 20rem;
-    }
-</style>
-<div id="background">
-    @if (!string.IsNullOrEmpty(TempData["UserNotification"] as string))
-    {
-        <div class="alert alert-success" role="alert">
-            @TempData["UserNotification"]
-        </div>
-    }
-    <img id="fon" src="~/lib/images/Fon.png" alt="ProjectDelivery">    
-    <div id="search-container">
-        <h1 class="text-center">Пошук посилки</h1>
-        <div class="row mt-5">
-            <div class="col-md-6 offset-md-3">
-                <form method="get" asp-controller="Service" asp-action="Tracking">
-                    <div id="tracking-form">
-                        <input type="text" class="form-control" id="tracking" placeholder="Введіть номер посилки" required asp-for="Id">
-                        <button type="submit" class="btn btn-primary">Знайти</button>
-                    </div>
-                </form>
+<div class="back-container">
+    <div id="background">
+        @if (!string.IsNullOrEmpty(TempData["UserNotification"] as string))
+        {
+            <div class="alert alert-success" id="alert" role="alert">
+                @TempData["UserNotification"]
             </div>
-        </div>        
+        }
+        <img id="fon" src="~/lib/images/Fon.png" alt="ProjectDelivery">    
+        <div id="search-container">
+            <h1 class="text-center">Пошук посилки</h1>
+            <div class="row mt-5">
+                <div class="tracking">
+                    <form method="get" asp-controller="Service" asp-action="Tracking">
+                        <div id="tracking-form">
+                            <input type="text" class="form-control" id="tracking" placeholder="Введіть номер посилки" required asp-for="Id">
+                            <button type="submit" class="btn btn-primary">Знайти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </div>
     </div>
 </div>
-
-<div class="container mt-2">
-    <div class="row mt-4">
-        <div class="col-md-6 text-center">
+<div class="fif-back">
+    <div class="tbuttons">
+        <div class="buttons">
             <form method="get" asp-controller="Service" asp-action="Calculate">
                 <button id="mainbtns" type="submit" class="btn btn-primary">
                     <img width="30px" src="~/lib/images/Coins.png" alt="ProjectDelivery">
@@ -186,7 +37,7 @@
                 </button>
             </form>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="buttons">
             <form method="get" asp-controller="Service" asp-action="Help">
                 <button id="mainbtns" type="submit" class="btn btn-primary">
                     <img width="30px" src="~/lib/images/Help.png" alt="ProjectDelivery">
@@ -195,25 +46,27 @@
             </form>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <h3 style="font-weight: bold; font-size: 50px; color: #6E1FEF;">Детальніше<br/> про послуги</h3>
+</div>
+<div class="back-container">
+    <div class="container" id="under">        
+        <div class="descr">
+            <h3>Детальніше<br/> про послуги</h3>
             <p>На цій сторінці можна відстежувати відправлення по Україні. Для цього введіть у поле трек-номер, що складається з 13 символів, та натисніть кнопку «Знайти».</p>
         </div>
-        <div class="col-md-6" id="btns">
-            <div class="row">
-                <div class="col-md-12 mb-2 ml-20">
+        <div class="btns">
+            <div class="row" id="righter">
+                <div class="img-btn">
                     <form method="post" asp-controller="Service" asp-action="Create">
                     <div type="submit" class="image-button" onclick="location.href='/Service/Create'">
                         <input type="hidden" name="TypePayment" value="True" />
                         <img src="~/lib/images/btn1.png" alt="ProjectDelivery">
-                        <div class="button-text" id="express-text">Експрес Доставка</div>
+                        <div class="button-text" id="express-text">Експрес<br />Доставка</div>
                         <div class="button-text-detail" id="detail-express">Докладніше>></div>
                     </div>
                     </form>
                 </div>
-                <div class="col-md-12 ml-20">
-                    <div class="image-button" onclick="location.href='/Service/Create'">
+                <div class="img-btn">
+                    <div class="image-button" id="img-btn-under"onclick="location.href='/Service/Create'">
                         <img src="~/lib/images/btn2.png" alt="ProjectDelivery">
                         <div class="button-text" id="other-text">Доставка</div>
                         <div class="button-text-detail" id="detail-other">Докладніше>></div>
@@ -221,5 +74,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</div> 
+    </div> 
+</div>

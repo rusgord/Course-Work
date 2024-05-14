@@ -15,6 +15,7 @@ namespace ProjectDelivery.Models
         public string? recipientName { get; set; }
         public string? senderName { get; set; }
         [Required]
+        [Phone]
         public string Phone { get; set; }
         public EnumCities City { get; set; }
         public string? SenderId { get; set; } = null;

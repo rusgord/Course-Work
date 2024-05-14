@@ -7,6 +7,7 @@ using ProjectDelivery.Classes;
 using ProjectDelivery.Data;
 using ProjectDelivery.Interfaces;
 using ProjectDelivery.Models;
+using System.Text.RegularExpressions;
 
 namespace ProjectDelivery.Controllers
 {
@@ -40,13 +41,14 @@ namespace ProjectDelivery.Controllers
         {
             if (ModelState.IsValid)
             {
-                var existingUser = await new FindingUser().FindByPhoneNumberAsync(_userManager, model.PhoneNumber);
+                string PhoneNumber = Digits.ExtractDigits(model.PhoneNumber);
+                var existingUser = await new FindingUser().FindByPhoneNumberAsync(_userManager, PhoneNumber);
                 if (existingUser != null)
                 {
                     ModelState.AddModelError(string.Empty, "Цей телефон вже використовується!");
                     return View(model);
                 }
-                var user = new AccModel { Name = model.Name, UserName = model.Email, Email = model.Email, PhoneNumber = model.PhoneNumber };
+                var user = new AccModel { Name = model.Name, UserName = model.Email, Email = model.Email, PhoneNumber = PhoneNumber };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -76,7 +78,8 @@ namespace ProjectDelivery.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = await new FindingUser().FindByPhoneNumberAsync(_userManager, model.Phone);
+                string PhoneNumber = Digits.ExtractDigits(model.Phone);
+                var user = await new FindingUser().FindByPhoneNumberAsync(_userManager, PhoneNumber);
                 if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
                 {
                     await _signInManager.SignInAsync(user, model.RememberMe);
@@ -160,8 +163,9 @@ namespace ProjectDelivery.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (ModelState.IsValid)
             {
+                string PhoneNumber = Digits.ExtractDigits(model.PhoneNumber);
                 user.Name = model.Name;
-                user.PhoneNumber = model.PhoneNumber;
+                user.PhoneNumber = PhoneNumber;
                 user.City = model.City;
                 var result = await _userManager.UpdateAsync(user);
                 if (result.Succeeded)

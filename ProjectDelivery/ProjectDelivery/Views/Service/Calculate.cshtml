@@ -1,60 +1,65 @@
-﻿@using ProjectDelivery.Enums
+﻿<link rel="stylesheet" href="/css/calculate-service.css">
+@using ProjectDelivery.Enums
 @{
     ViewData["Title"] = "Розрахувати";
 }
 @model ProjectDelivery.Models.CalcModel
 <div class="container">
-    <img src="~/lib/images/Calculate.png" width="40px" style="display: inline-block;">
-    <h2 class="mt-4" style="display: inline-block; margin-top: 0;">Розрахувати</h2>
-    <form method="post">
-        @if (Model.Weight != 0 && Model.Cost != 0)
-        {
+    <div class="box">
+        <div class="title">
+            <img src="~/lib/images/Calculate.png" alt="Calculation Icon">
+            <h2>Розрахувати</h2>
+        </div>
+        <form method="post">
+            @if (Model.Weight != 0 && Model.Cost != 0)
+            {
+                <div class="form-group">
+                    <label for="weight">Вага, кг</label>
+                    <input asp-for="Weight" type="number" class="form-control" id="weight" placeholder="Введіть вагу" value="@Model.Weight">
+                </div>
+                <div class="form-group">
+                    <label for="cost">Оголошена вартість, грн</label>
+                    <input asp-for="Cost" type="number" class="form-control" id="cost" placeholder="Введіть оголошену вартість" value="@Model.Cost">
+                </div>
+                <div class="form-group">
+                    <label>Місто</label>
+                    <select asp-for="City" class="form-control">
+                        <option disabled selected>@Model.City</option>
+                        @foreach (EnumCities city in Enum.GetValues(typeof(EnumCities)))
+                        {
+                            <option value="@city">@city</option>
+                        }
+                    </select>
+                </div>
+            }
+            else{
             <div class="form-group">
                 <label for="weight">Вага, кг</label>
-                <input asp-for="Weight" type="number" class="form-control" id="weight" placeholder="Введіть вагу" value="@Model.Weight">
+                    <input asp-for="Weight" type="number" class="form-control" id="weight" placeholder="Введіть вагу" value="">
             </div>
             <div class="form-group">
                 <label for="cost">Оголошена вартість, грн</label>
-                <input asp-for="Cost" type="number" class="form-control" id="cost" placeholder="Введіть оголошену вартість" value="@Model.Cost">
+                    <input asp-for="Cost" type="number" class="form-control" id="cost" placeholder="Введіть оголошену вартість" value="">
             </div>
             <div class="form-group">
                 <label>Місто</label>
                 <select asp-for="City" class="form-control">
-                    <option disabled selected>@Model.City</option>
+                    <option disabled selected>Виберіть місто</option>
                     @foreach (EnumCities city in Enum.GetValues(typeof(EnumCities)))
                     {
                         <option value="@city">@city</option>
                     }
                 </select>
             </div>
-        }
-        else{
-        <div class="form-group">
-            <label for="weight">Вага, кг</label>
-                <input asp-for="Weight" type="number" class="form-control" id="weight" placeholder="Введіть вагу" value="">
-        </div>
-        <div class="form-group">
-            <label for="cost">Оголошена вартість, грн</label>
-                <input asp-for="Cost" type="number" class="form-control" id="cost" placeholder="Введіть оголошену вартість" value="">
-        </div>
-        <div class="form-group">
-            <label>Місто</label>
-            <select asp-for="City" class="form-control">
-                <option disabled selected>Виберіть місто</option>
-                @foreach (EnumCities city in Enum.GetValues(typeof(EnumCities)))
+            }
+            <div class="result">
+                
+                <button type="submit" class="btn btn-primary">Розрахувати вартість</button>  
+                @if (Model.Price != 0)
                 {
-                    <option value="@city">@city</option>
+                    <label for="calculatedCost">Приблизна вартість: @Model.Price</label>
                 }
-            </select>
-        </div>
-        }
-        <button type="submit" class="btn btn-primary">Рассчитать</button>
-    </form>
-    @if (Model.Price != 0)
-    {
-        <div class="form-group">
-            <label for="calculatedCost">Приблизна вартість:</label>
-            <label id="calculatedCost">@Model.Price</label>
-        </div>
-    }
+            </div>
+        </form>        
+    </div>
 </div>

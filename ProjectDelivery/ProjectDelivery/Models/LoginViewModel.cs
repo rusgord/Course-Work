@@ -6,15 +6,15 @@ namespace ProjectDelivery.Models
     {
         [Required]
         [Phone]
-        [Display(Name = "Phone")]
+        [Display(Name = "Мобільний телефон")]
         public string Phone { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me")]
+        [Display(Name = "Запам'ятати мене")]
         public bool RememberMe { get; set; }
     }
 }
