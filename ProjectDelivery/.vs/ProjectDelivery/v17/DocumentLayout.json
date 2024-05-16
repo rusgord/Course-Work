@@ -3,52 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\accmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\accmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0216758-B2E5-490E-8C67-84F501CD95E8}|Project Test\\Project Test.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\project test\\articletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0216758-B2E5-490E-8C67-84F501CD95E8}|Project Test\\Project Test.csproj|solutionrelative:project test\\articletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\articlemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\articlemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0216758-B2E5-490E-8C67-84F501CD95E8}|Project Test\\Project Test.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\project test\\accounttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0216758-B2E5-490E-8C67-84F501CD95E8}|Project Test\\Project Test.csproj|solutionrelative:project test\\accounttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\views\\admin\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\views\\admin\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\accmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\accmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\articlemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\articlemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\viewprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\viewprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\viewprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\adminpanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\adminpanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\adminpanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\calcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\calcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\calcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\trackingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\trackingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\trackingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\package.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\package.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\package.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|c:\\users\\shkverz\\source\\project\\projectdelivery\\projectdelivery\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\projectdelivery\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:projectdelivery\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9FFC23-AB86-4A17-B1AD-2A6E99F62ABD}|ProjectDelivery\\ProjectDelivery.csproj|solutionrelative:ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,138 +78,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1864,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AccModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\AccModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AccModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\AccModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:10:40.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ProjectDelivery\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:01:03.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:00:34.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewProfileViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ViewProfileViewModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ViewProfileViewModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ViewProfileViewModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\ViewProfileViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T16:00:15.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChangePasswordViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:59:53.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminPanelViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AdminPanelViewModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\AdminPanelViewModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AdminPanelViewModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\AdminPanelViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:59:40.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ArticleModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ArticleModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ArticleModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ArticleModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\ArticleModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:59:17.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CalcModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\CalcModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\CalcModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\CalcModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\CalcModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:58:51.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:58:22.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TrackingModel.cs",
-              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\TrackingModel.cs",
-              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\TrackingModel.cs",
-              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\TrackingModel.cs",
-              "RelativeToolTip": "ProjectDelivery\\Models\\TrackingModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:57:48.549Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -200,7 +90,190 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountTest.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\Project Test\\AccountTest.cs",
+              "RelativeDocumentMoniker": "Project Test\\AccountTest.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\Project Test\\AccountTest.cs",
+              "RelativeToolTip": "Project Test\\AccountTest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:39:06.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArticleTest.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\Project Test\\ArticleTest.cs",
+              "RelativeDocumentMoniker": "Project Test\\ArticleTest.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\Project Test\\ArticleTest.cs",
+              "RelativeToolTip": "Project Test\\ArticleTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:39:05.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Views\\Admin\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Views\\Admin\\AddUser.cshtml",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Views\\Admin\\AddUser.cshtml",
+              "RelativeToolTip": "ProjectDelivery\\Views\\Admin\\AddUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T09:32:49.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ProjectDelivery\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T09:20:18.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240515090210_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs",
+              "RelativeToolTip": "ProjectDelivery\\Migrations\\20240515090210_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:02:11.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AccModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\AccModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AccModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\AccModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T16:10:40.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProjectDelivery\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T16:01:03.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T16:00:34.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViewProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ViewProfileViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ViewProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ViewProfileViewModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\ViewProfileViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T16:00:15.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\ChangePasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:59:53.635Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "AdminPanelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AdminPanelViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\AdminPanelViewModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\AdminPanelViewModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\AdminPanelViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:59:40.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArticleModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ArticleModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\ArticleModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\ArticleModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\ArticleModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:59:17.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CalcModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\CalcModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\CalcModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\CalcModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\CalcModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:58:51.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:58:22.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TrackingModel.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\TrackingModel.cs",
+              "RelativeDocumentMoniker": "ProjectDelivery\\Models\\TrackingModel.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\TrackingModel.cs",
+              "RelativeToolTip": "ProjectDelivery\\Models\\TrackingModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:57:48.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Package.cs",
               "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\Package.cs",
               "RelativeDocumentMoniker": "ProjectDelivery\\Models\\Package.cs",
@@ -208,12 +281,11 @@
               "RelativeToolTip": "ProjectDelivery\\Models\\Package.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwBUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:57:06.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T15:57:06.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\ProjectDelivery\\ProjectDelivery\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "ProjectDelivery\\Models\\RegisterViewModel.cs",
@@ -221,8 +293,7 @@
               "RelativeToolTip": "ProjectDelivery\\Models\\RegisterViewModel.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwB4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T15:56:21.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T15:56:21.704Z"
             }
           ]
         },
